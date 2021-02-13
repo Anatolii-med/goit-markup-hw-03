@@ -1,0 +1,230 @@
+:root {
+  /* background */
+  --bgc-main: #ffffff;
+  --bgc-dark: #f5f4fa;
+  --bgc-light: #e5e5e5;
+  --bgc-accent: #2196f3;
+  --bgc-hero-footer: #2f303a;
+
+  /* text */
+  --txt-c-dark: #000000;
+  --txt-c-grey: #212121;
+  --txt-c-grey-light: #757575;
+  --txt-c-accent: #2196f3;
+  --txt-c-address: rgba(255, 255, 255, 0.6);
+  --txt-c-light: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: var(--txt-c-grey-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* .link {
+  text-decoration: none;
+} */
+
+.pointer {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Raleway", Roboto, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 1.38;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--txt-c-accent);
+}
+
+.studio {
+  font-family: "Raleway", Roboto, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.03em;
+  color: var(--txt-c-dark);
+}
+
+.studio.footer {
+  color: var(--bgc-main);
+}
+
+/* *logo */
+/* .logo:hover,
+.logo:focus {
+  color: var(--txt-c-accent);
+} */
+
+/* *site-nav */
+.site-nav .link {
+  color: var(--txt-c-grey);
+}
+
+.site-nav .link.current {
+  color: var(--txt-c-accent);
+}
+
+.auth-nav .link {
+  color: var(--txt-c-grey-light);
+}
+
+.logo:hover,
+.logo:focus,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--txt-c-accent);
+}
+
+/* *hero */
+.hero {
+  background-color: var(--bgc-hero-footer);
+}
+
+.hero-title {
+  color: var(--txt-c-light);
+  font-family: Roboto, sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--txt-c-light);
+  background-color: var(--bgc-accent);
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16;
+  line-height: 1.88;
+  text-align: center;
+}
+
+/* *section */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title,
+.section-item {
+  color: var(--txt-c-grey);
+}
+
+.section-title {
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.features .section-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.features .content {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.team .section-item {
+  color: var(--txt-c-grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team .content {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--bgc-hero-footer);
+}
+
+.auth-nav .adres {
+  color: var(--bgc-main);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+/* !portfolio */
+.filter-btn {
+  color: var(--txt-c-grey);
+  background-color: var(--bgc-dark);
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--txt-c-light);
+  background-color: var(--bgc-accent);
+  border: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16;
+  line-height: 1.62;
+}
+
+.projects .project-item {
+  color: var(--txt-c-grey);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.projects .project-type {
+  color: var(--txt-c-grey-light);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
