@@ -59,6 +59,9 @@ a {
 
   margin-top: 0;
   margin-bottom: 0;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .studio {
@@ -71,7 +74,7 @@ a {
   color: var(--txt-c-dark);
 }
 
-.studio.footer {
+.studio.foot {
   color: var(--bgc-main);
 }
 
@@ -120,6 +123,7 @@ header {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .site-nav .link.current {
@@ -131,8 +135,13 @@ header {
   align-items: center;
 }
 
+.auth-nav .item {
+  margin: 0;
+}
+
 .header-cont .auth-nav .item + .item {
   margin-left: 50px;
+  margin-bottom: 0;
 }
 
 .auth-nav .link {
@@ -140,6 +149,10 @@ header {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  display: block;
+  padding: 32px 0px;
 }
 
 .logo:hover,
@@ -301,6 +314,10 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.team-item-name {
+  padding: 30px 0 30px 0;
+}
+
 .team .section-item {
   color: var(--txt-c-grey);
   font-size: 16px;
@@ -309,7 +326,6 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
 
-  padding-top: 30px;
   padding-bottom: 10px;
   margin-top: 0;
   margin-bottom: 0;
@@ -321,7 +337,6 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 
-  padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -342,9 +357,10 @@ header {
   flex-flow: column;
 }
 
-.footer .logo {
+.footer .logo.ftr {
   display: inline-block;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .auth-nav.foot-nav {
@@ -352,11 +368,17 @@ header {
   font-style: normal;
 }
 
-.auth-nav .item {
+.footer .auth-nav .item {
   margin: 0 0 9px 0;
+  padding: 0;
 }
 
-.auth-nav .adres {
+.footer .link.foot-adr {
+  margin: 0;
+  padding: 0;
+}
+
+.auth-nav > .adres {
   display: block;
   color: var(--bgc-main);
   font-size: 14px;
@@ -364,7 +386,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-bottom: 9px;
+  padding: 0;
 }
 
 .list .foot-adr {
@@ -383,28 +405,21 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 
   padding-left: 22px;
   padding-right: 22px;
   border-radius: 4px;
 }
 
-.btn-container {
-  display: flex;
-}
-
-.btn-con-marg {
-  margin-bottom: 50px;
-}
-
-.btn-container .list {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .btn-container .item:not(:last-child) {
   margin-right: 8px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filter-btn:hover,
@@ -416,6 +431,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 /* *cards================================== */
@@ -440,8 +456,8 @@ header {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
-  margin: 0 0 4px 0;
-  padding: 0;
+  margin: 0 0 0 0;
+  padding: 0 0 4px 0;
 }
 
 .projects .project-type {
@@ -456,5 +472,10 @@ header {
 
 .projects .item-name {
   display: block;
-  margin: 20px 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+
+  padding: 20px 24px;
 }
