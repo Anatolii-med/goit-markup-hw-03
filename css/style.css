@@ -327,9 +327,8 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
 
-  padding-bottom: 10px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .team .content {
@@ -408,8 +407,9 @@ header {
   line-height: 1.62;
   letter-spacing: 0.03em;
 
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
+  /* padding-left: 22px;
+  padding-right: 22px; */
   border-radius: 4px;
 }
 
@@ -457,8 +457,8 @@ header {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
-  margin: 0 0 0 0;
-  padding: 0 0 4px 0;
+  margin: 0 0 4px 0;
+  padding: 0 0 0 0;
 }
 
 .projects .project-type {
